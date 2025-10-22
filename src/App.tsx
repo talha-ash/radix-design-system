@@ -1,7 +1,7 @@
 function App() {
   return (
     <>
-      <div className="text-text-base-subtle mt-4">
+      <div className="text-text-base-subtle text-heading-3 mt-4 font-inter font-bold">
         <a href="https://vite.dev" target="_blank">
           Hello
         </a>

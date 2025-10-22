@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-Medium.woff2") format("woff2");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-SemiBold.woff2") format("woff2");
+  font-weight: 600; /* Medium */
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-Bold.woff2") format("woff2");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+  font-display: auto;
+}
+
+@theme {
+  --font-*: initial;
+  --font-inter: "Inter";
+  --font-display: "Inter";
+
+  --font-weight-*: initial;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --text-*: initial;
+  --text-plain-xs: 0.75rem;
+  --text-plain-sm: 0.875rem;
+  --text-plain-md: 1rem;
+
+  --text-lead-xs: 1.125rem;
+  --text-lead-sm: 1.25rem;
+  --text-lead-md: 1.5rem;
+
+  --text-heading-1: 2.5rem;
+  --text-heading-2: 2rem;
+  --text-heading-3: 1.5rem;
+  --text-heading-4: 1.25rem;
+  --text-heading-5: 1.125rem;
+  --text-heading-6: 1rem;
+  --text-subtitle: 0.875rem;
+
+  --text-display-xxl: 5rem;
+  --text-display-xl: 4.5rem;
+  --text-display-lg: 4rem;
+  --text-display-md: 3.5rem;
+  --text-display-sm: 3rem;
+  --text-display-xs: 2.5rem;
+
+  --leading-*: initial;
+  --leading-18: 1.125rem;
+  --leading-20: 1.25rem;
+  --leading-24: 1.5rem;
+  --leading-26: 1.625rem;
+  --leading-28: 1.75rem;
+  --leading-32: 2rem;
+  --leading-40: 2.5rem;
+  --leading-48: 3rem;
+  --leading-50: 3.125rem;
+  --leading-56: 3.5rem;
+  --leading-64: 4rem;
+  --leading-72: 4.5rem;
+  --leading-80: 5rem;
+  --leading-90: 5.625rem;
+  --leading-100: 6.25rem;
+}
