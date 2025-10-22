@@ -469,4 +469,85 @@
   --color-bg-fill-additional-tertiary_active: var(--color-additional-400);
   --color-bg-fill-additional-tertiary_disabled: var(--color-additional-100);
   --color-bg-fill-additional-tertiary_subtle: var(--color-additional-100);
+
+  /* Border Colors */
+  --color-border-base-primary: var(--color-base-500);
+  --color-border-base-primary_hover: var(--color-base-600);
+  --color-border-base-primary_active: var(--color-base-700);
+  --color-border-base-primary_disabled: var(--color-base-400);
+
+  --color-border-base-secondary: var(--color-base-300);
+  --color-border-base-secondary_hover: var(--color-base-400);
+  --color-border-base-secondary_active: var(--color-base-500);
+  --color-border-base-secondary_disabled: var(--color-base-200);
+
+  --color-border-overlay-w-primary: var(--color-white-trans-18);
+  --color-border-overlay-w-primary_hover: var(--color-white-trans-25);
+  --color-border-overlay-w-primary_active: var(--color-white-trans-39);
+  --color-border-overlay-w-primary_disabled: var(--color-white-trans-12);
+
+  --color-border-overlay-w-secondary: var(--color-white-trans-09);
+  --color-border-overlay-w-secondary_hover: var(--color-white-trans-12);
+  --color-border-overlay-w-secondary_active: var(--color-white-trans-18);
+  --color-border-overlay-w-secondary_disabled: var(--color-white-trans-06);
+
+  --color-border-overlay-b-primary: var(--color-black-trans-14);
+  --color-border-overlay-b-primary_hover: var(--color-black-trans-22);
+  --color-border-overlay-b-primary_active: var(--color-black-trans-44);
+  --color-border-overlay-b-primary_disabled: var(--color-black-trans-12);
+
+  --color-border-overlay-b-secondary: var(--color-black-trans-09);
+  --color-border-overlay-b-secondary_hover: var(--color-black-trans-11);
+  --color-border-overlay-b-secondary_active: var(--color-black-trans-14);
+  --color-border-overlay-b-secondary_disabled: var(--color-black-trans-07);
+
+  --color-border-brand-primary: var(--color-brand-500);
+  --color-border-brand-primary_hover: var(--color-brand-600);
+  --color-border-brand-primary_active: var(--color-brand-700);
+  --color-border-brand-primary_disabled: var(--color-brand-400);
+
+  --color-border-brand-secondary: var(--color-brand-300);
+  --color-border-brand-secondary_hover: var(--color-brand-400);
+  --color-border-brand-secondary_active: var(--color-brand-500);
+  --color-border-brand-secondary_disabled: var(--color-brand-200);
+
+  --color-border-success-primary: var(--color-success-500);
+  --color-border-success-primary_hover: var(--color-success-600);
+  --color-border-success-primary_active: var(--color-success-700);
+  --color-border-success-primary_disabled: var(--color-success-400);
+
+  --color-border-success-secondary: var(--color-success-300);
+  --color-border-success-secondary_hover: var(--color-success-400);
+  --color-border-success-secondary_active: var(--color-success-500);
+  --color-border-success-secondary_disabled: var(--color-success-200);
+
+  --color-border-warning-primary: var(--color-warning-500);
+  --color-border-warning-primary_hover: var(--color-warning-600);
+  --color-border-warning-primary_active: var(--color-warning-700);
+  --color-border-warning-primary_disabled: var(--color-warning-400);
+
+  --color-border-warning-secondary: var(--color-warning-300);
+  --color-border-warning-secondary_hover: var(--color-warning-400);
+  --color-border-warning-secondary_active: var(--color-warning-500);
+  --color-border-warning-secondary_disabled: var(--color-warning-200);
+
+  --color-border-danger-primary: var(--color-danger-500);
+  --color-border-danger-primary_hover: var(--color-danger-600);
+  --color-border-danger-primary_active: var(--color-danger-700);
+  --color-border-danger-primary_disabled: var(--color-danger-400);
+
+  --color-border-danger-secondary: var(--color-danger-300);
+  --color-border-danger-secondary_hover: var(--color-danger-400);
+  --color-border-danger-secondary_active: var(--color-danger-500);
+  --color-border-danger-secondary_disabled: var(--color-danger-200);
+
+  --color-border-additional-primary: var(--color-additional-500);
+  --color-border-additional-primary_hover: var(--color-additional-600);
+  --color-border-additional-primary_active: var(--color-additional-700);
+  --color-border-additional-primary_disabled: var(--color-additional-400);
+
+  --color-border-additional-secondary: var(--color-additional-300);
+  --color-border-additional-secondary_hover: var(--color-additional-400);
+  --color-border-additional-secondary_active: var(--color-additional-500);
+  --color-border-additional-secondary_disabled: var(--color-additional-200);
 }
