@@ -1,0 +1,69 @@
+@theme {
+  /* Custom Breakpoints matching your Figma design */
+  --breakpoint-xs: 540px;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-xxl: 1440px;
+
+  /* Custom Spacing for gutters and margins */
+  --spacing-gutter: calc(var(--spacing) * 12); /* 24px */
+
+  /* Container max-widths for each breakpoint */
+  --container-xs: 540px;
+  --container-sm: 540px;
+  --container-md: 720px;
+  --container-lg: 960px;
+  --container-xl: 1140px;
+  --container-xxl: 1320px;
+}
+
+@layer components {
+  .container-fixed {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--spacing-gutter);
+    padding-right: var(--spacing-gutter);
+
+    @media (width >= 540px) {
+      max-width: var(--container-xs);
+    }
+
+    @media (width >= 576px) {
+      max-width: var(--container-sm);
+    }
+
+    @media (width >= 768px) {
+      max-width: var(--container-md);
+    }
+
+    @media (width >= 992px) {
+      max-width: var(--container-lg);
+    }
+
+    @media (width >= 1200px) {
+      max-width: var(--container-xl);
+    }
+
+    @media (width >= 1440px) {
+      max-width: var(--container-xxl);
+    }
+  }
+
+  .container-fluid {
+    width: 100%;
+    padding-left: var(--spacing-gutter);
+    padding-right: var(--spacing-gutter);
+  }
+
+  .grid-layout {
+    display: grid;
+    gap: var(--spacing-gutter);
+  }
+
+  .grid-cols-layout {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+}
