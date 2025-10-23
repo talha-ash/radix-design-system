@@ -1,7 +1,5 @@
-@import "tailwindcss";
-@import "./typography.css";
 
-:root {
+root {
   /* Primitive Colors */
   --color-white: #ffffff;
   --color-black: #000000;
@@ -83,7 +81,6 @@
   --color-purple-900: #793bb0;
   --color-purple-950: #2b0e44;
 }
-
 
 @theme {
   --color-*: initial;
