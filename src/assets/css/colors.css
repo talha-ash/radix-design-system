@@ -1,5 +1,4 @@
-
-root {
+:root {
   /* Primitive Colors */
   --color-white: #ffffff;
   --color-black: #000000;
@@ -110,6 +109,7 @@ root {
   --color-black-trans-09: rgba(0, 0, 0, 0.09);
   --color-black-trans-11: rgba(0, 0, 0, 0.11);
   --color-black-trans-14: rgba(0, 0, 0, 0.14);
+  --color-black-trans-15: rgba(0, 0, 0, 0.15);
   --color-black-trans-22: rgba(0, 0, 0, 0.22);
   --color-black-trans-44: rgba(0, 0, 0, 0.44);
   --color-black-trans-48: rgba(0, 0, 0, 0.48);

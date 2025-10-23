@@ -5,7 +5,7 @@ function App() {
         <a href="https://vite.dev" target="_blank">
           Hello
         </a>
-        <button className="w-32 h-12 bg-bg-fill-brand-primary rounded m-0.5">Hello</button>
+        <button className=" m-5xl w-32 h-12 bg-bg-fill-brand-primary rounded ring-brand">Hello</button>
       </div>
     </>
   );
