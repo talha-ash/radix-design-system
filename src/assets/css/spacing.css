@@ -1,7 +1,9 @@
+:root {
+  --spacing: 2px;
+}
 
 @theme {
   --spacing-*: initial;
-  --spacing: 2px;
   --spacing-none: calc(var(--spacing) * 0);
   --spacing-xss: calc(var(--spacing) * 1);
   --spacing-xs: calc(var(--spacing) * 2);

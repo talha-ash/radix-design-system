@@ -57,13 +57,66 @@
     padding-left: var(--spacing-gutter);
     padding-right: var(--spacing-gutter);
   }
+}
 
-  .grid-layout {
-    display: grid;
-    gap: var(--spacing-gutter);
-  }
+[class*="grid-start-"] {
+  grid-row-start: 1;
+}
 
-  .grid-cols-layout {
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-  }
+@utility row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr auto;
+  column-gap: var(--spacing-gutter);
+}
+
+@utility row-auto {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15em), 1fr));
+}
+
+@utility grid-col-1 {
+  grid-column: auto / span 1;
+}
+
+@utility grid-col-2 {
+  grid-column: auto / span 2;
+}
+
+@utility grid-col-3 {
+  grid-column: auto / span 3;
+}
+
+@utility grid-col-4 {
+  grid-column: auto / span 4;
+}
+
+@utility grid-col-5 {
+  grid-column: auto / span 5;
+}
+
+@utility grid-col-6 {
+  grid-column: auto / span 6;
+}
+
+@utility grid-col-7 {
+  grid-column: auto / span 7;
+}
+
+@utility grid-col-8 {
+  grid-column: auto / span 8;
+}
+
+@utility grid-col-9 {
+  grid-column: auto / span 9;
+}
+
+@utility grid-col-10 {
+  grid-column: auto / span 10;
+}
+
+@utility grid-col-11 {
+  grid-column: auto / span 11;
+}
+@utility grid-col-12 {
+  grid-column: auto / span 12;
 }
