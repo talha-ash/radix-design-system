@@ -1,0 +1,26 @@
+@layer components {
+.btn {
+    width: var(--size-w);
+    height: var(--size-h);
+    color: var(--btn-fg);
+    background-color: var(--btn-bg);
+    padding-inline: var(--btn-p);
+    border: var(--btn-border);
+    border-start-start-radius: var(--btn-radius);
+    border-start-end-radius: var(--btn-radius);
+    border-end-start-radius: var(--btn-radius);
+    border-end-end-radius: var(--btn-radius);
+    font-size: var(--text-plain-md);
+    font-weight: var(--font-weight-medium);
+    outline-color: var(---btn-bg);
+
+    --size-w: 135px;
+    --size-h: 48px;
+    --btn-bg: var(--color-bg-fill-brand-primary);
+    --btn-fg: var(--color-text-overlay-w-primary);
+    --btn-p: var(--spacing-xxl);
+    --btn-radius: var(--rounded-sm);
+    --btn-border: none;
+  }
+}
+
