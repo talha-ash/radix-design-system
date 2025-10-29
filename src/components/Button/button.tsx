@@ -1,5 +1,3 @@
-import "./button.css";
-
 export const Button = () => {
-  return <button className="btn btn-secondary">Hello Button</button>;
+  return <button className="btn">Hello Button</button>;
 };

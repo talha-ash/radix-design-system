@@ -1,5 +1,6 @@
 @layer components {
-.btn {
+  .btn {
+    @apply inline-flex shrink-0 cursor-pointer flex-nowrap items-center justify-center text-center align-middle select-none;
     width: var(--size-w);
     height: var(--size-h);
     color: var(--btn-fg);
@@ -21,6 +22,22 @@
     --btn-p: var(--spacing-xxl);
     --btn-radius: var(--rounded-sm);
     --btn-border: none;
+
+    &:hover {
+      --btn-bg: var(--color-bg-fill-brand-primary_hover);
+    }
+    &:active {
+      --btn-bg: var(--color-bg-fill-brand-primary_active);
+    }
+    &:focus {
+      @apply ring-brand;
+      --btn-bg: var(--color-bg-fill-brand-primary);
+    }
+
+    &:disabled,
+    &[disabled] {
+      @apply pointer-events-none;
+      --btn-bg: var(--color-bg-fill-brand-primary_disabled);
+    }
   }
 }
-
