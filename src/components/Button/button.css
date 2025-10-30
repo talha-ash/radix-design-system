@@ -13,31 +13,403 @@
     border-end-end-radius: var(--btn-radius);
     font-size: var(--text-plain-md);
     font-weight: var(--font-weight-medium);
-    outline-color: var(---btn-bg);
+    outline: none;
 
     --size-w: 135px;
     --size-h: 48px;
-    --btn-bg: var(--color-bg-fill-brand-primary);
+
     --btn-fg: var(--color-text-overlay-w-primary);
     --btn-p: var(--spacing-xxl);
     --btn-radius: var(--rounded-sm);
     --btn-border: none;
 
-    &:hover {
-      --btn-bg: var(--color-bg-fill-brand-primary_hover);
+    @media (hover: hover) {
+      &:hover {
+        --btn-bg: var(--color-bg-fill-brand-primary_hover);
+      }
     }
+
     &:active {
       --btn-bg: var(--color-bg-fill-brand-primary_active);
     }
-    &:focus {
+
+    &:focus-visible,
+    &:has(:focus-visible) {
       @apply ring-brand;
       --btn-bg: var(--color-bg-fill-brand-primary);
+      isolation: isolate;
     }
 
     &:disabled,
     &[disabled] {
       @apply pointer-events-none;
       --btn-bg: var(--color-bg-fill-brand-primary_disabled);
+    }
+  }
+
+  .btn-primary {
+    --btn-bg: var(--color-bg-fill-brand-primary);
+    @media (hover: hover) {
+      &:hover {
+        --btn-bg: var(--color-bg-fill-brand-primary_hover);
+      }
+    }
+
+    &:active {
+      --btn-bg: var(--color-bg-fill-brand-primary_active);
+    }
+
+    &:focus-visible,
+    &:has(:focus-visible) {
+      @apply ring-brand;
+      --btn-bg: var(--color-bg-fill-brand-primary);
+      isolation: isolate;
+    }
+
+    &:disabled,
+    &[disabled] {
+      @apply pointer-events-none;
+      --btn-bg: var(--color-bg-fill-brand-primary_disabled);
+    }
+  }
+
+  .btn-secondary {
+    --btn-bg: var(--color-bg-fill-base-primary);
+    @media (hover: hover) {
+      &:hover {
+        --btn-bg: var(--color-bg-fill-base-primary_hover);
+      }
+    }
+
+    &:active {
+      --btn-bg: var(--color-bg-fill-base-primary_active);
+    }
+
+    &:focus-visible,
+    &:has(:focus-visible) {
+      @apply ring-slate;
+      --btn-bg: var(--color-bg-fill-base-primary);
+      isolation: isolate;
+    }
+
+    &:disabled,
+    &[disabled] {
+      @apply pointer-events-none;
+      --btn-bg: var(--color-bg-fill-base-primary_disabled);
+    }
+  }
+
+  .btn-danger {
+    --btn-bg: var(--color-bg-fill-danger-primary);
+    @media (hover: hover) {
+      &:hover {
+        --btn-bg: var(--color-bg-fill-danger-primary_hover);
+      }
+    }
+
+    &:active {
+      --btn-bg: var(--color-bg-fill-danger-primary_active);
+    }
+
+    &:focus-visible,
+    &:has(:focus-visible) {
+      @apply ring-red;
+      --btn-bg: var(--color-bg-fill-danger-primary);
+      isolation: isolate;
+    }
+
+    &:disabled,
+    &[disabled] {
+      @apply pointer-events-none;
+      --btn-bg: var(--color-bg-fill-danger-primary_disabled);
+    }
+  }
+
+  .btn-outline-primary {
+    --btn-border-width: 1px solid;
+    --btn-bg: var(--color-bg-surface-base-primary);
+    --btn-fg: var(--color-text-brand);
+    --btn-border: var(--btn-border-width) var(--color-border-brand-primary);
+
+    @media (hover: hover) {
+      &:hover {
+        --btn-border: var(--btn-border-width)
+          var(--color-border-brand-primary_hover);
+        --btn-fg: var(--color-text-brand_hover);
+      }
+    }
+
+    &:active {
+      --btn-border: var(--btn-border-width)
+        var(--color-border-brand-primary_active);
+      --btn-fg: var(--color-text-brand_active);
+    }
+
+    &:focus-visible,
+    &:has(:focus-visible) {
+      @apply ring-brand;
+      --btn-border: var(--btn-border-width) var(--color-border-brand-primary);
+      isolation: isolate;
+    }
+
+    &:disabled,
+    &[disabled] {
+      @apply pointer-events-none;
+      --btn-border: var(--btn-border-width)
+        var(--color-border-brand-primary_disabled);
+      --btn-fg: var(--color-text-brand_disabled);
+    }
+  }
+  .btn-tinted-primary {
+    --btn-border-width: 1px solid;
+    --btn-bg: var(--color-bg-fill-brand-tertiary);
+    --btn-fg: var(--color-text-brand);
+    --btn-border: none;
+
+    @media (hover: hover) {
+      &:hover {
+        --btn-bg: var(--color-bg-fill-brand-tertiary_hover);
+        --btn-fg: var(--color-text-brand_hover);
+      }
+    }
+
+    &:active {
+      --btn-bg: var(--color-bg-fill-brand-tertiary_active);
+      --btn-fg: var(--color-text-brand_active);
+    }
+
+    &:focus-visible,
+    &:has(:focus-visible) {
+      @apply ring-brand;
+      isolation: isolate;
+    }
+
+    &:disabled,
+    &[disabled] {
+      @apply pointer-events-none;
+      --btn-bg: var(--color-bg-fill-brand-tertiary_disabled);
+      --btn-fg: var(--color-text-brand_disabled);
+    }
+  }
+
+  .btn-plain-primary {
+    --btn-border-width: none;
+    --btn-bg: var(--color-transparent);
+    --btn-fg: var(--color-text-brand);
+    --btn-border: none;
+
+    @media (hover: hover) {
+      &:hover {
+        --btn-fg: var(--color-text-brand_hover);
+      }
+    }
+
+    &:active {
+      --btn-fg: var(--color-text-brand_active);
+    }
+
+    &:focus-visible,
+    &:has(:focus-visible) {
+      @apply ring-brand;
+      isolation: isolate;
+    }
+
+    &:disabled,
+    &[disabled] {
+      @apply pointer-events-none;
+      --btn-fg: var(--color-text-brand_disabled);
+    }
+  }
+
+  .btn-outline-danger {
+    --btn-border-width: 1px solid;
+    --btn-bg: var(--color-bg-surface-base-primary);
+    --btn-fg: var(--color-text-danger);
+    --btn-border: var(--btn-border-width) var(--color-border-danger-primary);
+
+    @media (hover: hover) {
+      &:hover {
+        --btn-border: var(--btn-border-width)
+          var(--color-border-danger-primary_hover);
+        --btn-fg: var(--color-text-danger_hover);
+      }
+    }
+
+    &:active {
+      --btn-border: var(--btn-border-width)
+        var(--color-border-danger-primary_active);
+      --btn-fg: var(--color-text-danger_active);
+    }
+
+    &:focus-visible,
+    &:has(:focus-visible) {
+      @apply ring-red;
+      --btn-border: var(--btn-border-width) var(--color-border-danger-primary);
+      isolation: isolate;
+    }
+
+    &:disabled,
+    &[disabled] {
+      @apply pointer-events-none;
+      --btn-border: var(--btn-border-width)
+        var(--color-border-danger-primary_disabled);
+      --btn-fg: var(--color-text-danger_disabled);
+    }
+  }
+  .btn-tinted-danger {
+    --btn-border-width: 1px solid;
+    --btn-bg: var(--color-bg-fill-danger-tertiary);
+    --btn-fg: var(--color-text-danger);
+    --btn-border: none;
+
+    @media (hover: hover) {
+      &:hover {
+        --btn-bg: var(--color-bg-fill-danger-tertiary_hover);
+        --btn-fg: var(--color-text-danger_hover);
+      }
+    }
+
+    &:active {
+      --btn-bg: var(--color-bg-fill-danger-tertiary_active);
+      --btn-fg: var(--color-text-danger_active);
+    }
+
+    &:focus-visible,
+    &:has(:focus-visible) {
+      @apply ring-red;
+      isolation: isolate;
+    }
+
+    &:disabled,
+    &[disabled] {
+      @apply pointer-events-none;
+      --btn-bg: var(--color-bg-fill-danger-tertiary_disabled);
+      --btn-fg: var(--color-text-danger_disabled);
+    }
+  }
+
+  .btn-plain-danger {
+    --btn-border-width: none;
+    --btn-bg: var(--color-transparent);
+    --btn-fg: var(--color-text-danger);
+    --btn-border: none;
+
+    @media (hover: hover) {
+      &:hover {
+        --btn-fg: var(--color-text-danger_hover);
+      }
+    }
+
+    &:active {
+      --btn-fg: var(--color-text-danger_active);
+    }
+
+    &:focus-visible,
+    &:has(:focus-visible) {
+      @apply ring-red;
+      isolation: isolate;
+    }
+
+    &:disabled,
+    &[disabled] {
+      @apply pointer-events-none;
+      --btn-fg: var(--color-text-danger_disabled);
+    }
+  }
+
+  .btn-outline-secondary {
+    --btn-border-width: 1px solid;
+    --btn-bg: var(--color-bg-surface-base-primary);
+    --btn-fg: var(--color-text-base-tertiary);
+    --btn-border: var(--btn-border-width) var(--color-border-base-primary);
+
+    @media (hover: hover) {
+      &:hover {
+        --btn-border: var(--btn-border-width)
+          var(--color-border-base-primary_hover);
+        --btn-fg: var(--color-text-base-tertiary_hover);
+      }
+    }
+
+    &:active {
+      --btn-border: var(--btn-border-width)
+        var(--color-border-base-primary_active);
+      --btn-fg: var(--color-text-base-tertiary_active);
+    }
+
+    &:focus-visible,
+    &:has(:focus-visible) {
+      @apply ring-slate;
+      --btn-border: var(--btn-border-width) var(--color-border-base-primary);
+      isolation: isolate;
+    }
+
+    &:disabled,
+    &[disabled] {
+      @apply pointer-events-none;
+      --btn-border: var(--btn-border-width)
+        var(--color-border-base-primary_disabled);
+      --btn-fg: var(--color-text-base-tertiary_disabled);
+    }
+  }
+  .btn-tinted-secondary {
+    --btn-border-width: 1px solid;
+    --btn-bg: var(--color-bg-fill-base-tertiary);
+    --btn-fg: var(--color-text-base-tertiary);
+    --btn-border: none;
+
+    @media (hover: hover) {
+      &:hover {
+        --btn-bg: var(--color-bg-fill-base-tertiary_hover);
+        --btn-fg: var(--color-text-base-tertiary_hover);
+      }
+    }
+
+    &:active {
+      --btn-bg: var(--color-bg-fill-base-tertiary_active);
+      --btn-fg: var(--color-text-base-tertiary_active);
+    }
+
+    &:focus-visible,
+    &:has(:focus-visible) {
+      @apply ring-slate;
+      isolation: isolate;
+    }
+
+    &:disabled,
+    &[disabled] {
+      @apply pointer-events-none;
+      --btn-bg: var(--color-bg-fill-base-tertiary_disabled);
+      --btn-fg: var(--color-text-base-tertiary_disabled);
+    }
+  }
+
+  .btn-plain-secondary {
+    --btn-border-width: none;
+    --btn-bg: var(--color-transparent);
+    --btn-fg: var(--color-text-base-tertiary);
+    --btn-border: none;
+
+    @media (hover: hover) {
+      &:hover {
+        --btn-fg: var(--color-text-base-tertiary_hover);
+      }
+    }
+
+    &:active {
+      --btn-fg: var(--color-text-base-tertiary_active);
+    }
+
+    &:focus-visible,
+    &:has(:focus-visible) {
+      @apply ring-slate;
+      isolation: isolate;
+    }
+
+    &:disabled,
+    &[disabled] {
+      @apply pointer-events-none;
+      --btn-fg: var(--color-text-base-tertiary_disabled);
     }
   }
 }
